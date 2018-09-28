@@ -1,0 +1,13 @@
+diff --git a/configure.ac b/configure.ac
+index 73437755..3a591f58 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -27,6 +27,8 @@ AC_CONFIG_HEADERS(config.h)
+ dnl Enable silent rules only when available (automake 1.11 or later).
+ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+ 
++git submodule update --init
++
+ case "${host_os}" in
+   "")
+     SYS=unknown
