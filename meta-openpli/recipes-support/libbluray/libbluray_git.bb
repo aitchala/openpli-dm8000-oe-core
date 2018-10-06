@@ -6,9 +6,7 @@ LIC_FILES_CHKSUM="file://COPYING;md5=435ed639f84d4585d93824e7da3d85da"
 
 DEPENDS = "libxml2"
 
-SRC_URI = " git://git.videolan.org/libbluray.git \
-			file://init-submodule.patch \
-"
+SRC_URI = " git://git.videolan.org/libbluray.git"
 
 inherit gitpkgv setuptools autotools-brokensep pkgconfig
 
